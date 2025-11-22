@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #182333;
+  --second-color: #0982f8;
+  --poppins-font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--first-color);
+}
+
+
+/* *************************************** */
+/* head-section */
+/* *************************************** */
+.head-section {
+  width: fit-content;
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  position: relative;
+  font-family: var(--poppins-font-family);
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: var(--second-color);
+    left: 0;
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+
+
+
+
+/* *************************************** */
+/* top header */
+/* *************************************** */
+.info {
+  background-color: var(--first-color);
+  padding: 10px;
+
+  .information {
+    color: white;
+
+    p {
+      margin: 0;
+    }
+
+    i {
+      color: var(--second-color);
+    }
+  }
+
+  .social {
+    a {
+      color: white;
+      transition: 0.5s;
+    }
+
+    a:hover {
+      color: var(--second-color);
+    }
+  }
+}
+
+
+/* *************************************** */
+/* navbar */
+/* *************************************** */
+.navbar {
+  /* box-shadow: 0 4px 9px #cbcbcb; */
+  position: relative;
+
+  .navbar-nav {
+    a.active {
+      color: var(--second-color);
+    }
+
+    a {
+      color: #ababab;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: var(--second-color);
+    }
+  }
+
+  .translate {
+    background-color: var(--second-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    align-content: center;
+    position: absolute;
+    right: 5rem;
+    top: 20px;
+  }
+}
+
+/* *************************************** */
+/* main-section */
+/* *************************************** */
+.main-section {
+  background-image: url("../img/main-section.jpg");
+  background-size: cover;
+  height: 83vh;
+
+  .overlay {
+    background-color: #000000cf;
+    width: 100%;
+    height: 100%;
+    color: white;
+
+    .text {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        line-height: 30px;
+      }
+
+      button {
+        background-color: var(--second-color);
+        font-size: 18px;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+/* *************************************** */
+/* about-us */
+/* *************************************** */
+
+
+.about {
+  .container {
+    .row {
+      .text {
+        h1 {
+          position: relative;
+          padding-left: 15px;
+          font-family: var(--poppins-font-family);
+
+          &::before {
+            content: "";
+            width: 3px;
+            height: 100%;
+            background-color: var(--second-color);
+            position: absolute;
+            left: 0;
+          }
+        }
+
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* *************************************** */
+/* services */
+/* *************************************** */
+
+.services {
+  background-image: url("../img/talambat/اوفرهيد.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 45vh;
+
+  .container {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #182333d1;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .row {
+    position: relative;
+    width: 100%;
+    left: 12px;
+    row-gap: 20px;
+
+    .box {
+      border-radius: 10px;
+      position: relative;
+      height: 11rem;
+      width: 11rem;
+
+      span {
+        font-size: 3rem;
+        background-color: #0982f8;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .text {
+        color: var(--first-color);
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+
+        h3 {
+          margin-top: 20px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* *************************************** */
+/* choose */
+/* *************************************** */
+.choose {
+  margin: 10rem 0;
+
+  .row {
+    row-gap: 5rem;
+  }
+
+  .card {
+    background-color: transparent;
+    border: none;
+
+    i {
+      color: var(--second-color);
+      font-size: 2rem;
+    }
+
+    .title {
+
+      h3 {
+        color: #9edeff;
+      }
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+
+
+/* *************************************** */
+/* projects */
+/* *************************************** */
+
+
+.projects {
+  .head {
+    padding-right: 20px;
+    margin-bottom: 4rem;
+
+    h1 {
+      margin: 0;
+    }
+
+    a {
+      width: fit-content;
+      background-color: var(--second-color);
+      color: white;
+      font-family: var(--poppins-font-family);
+      font-weight: bold;
+    }
+  }
+
+  .row img {
+    width: 60%;
+  }
+
+  .text {
+    h1 {
+      color: #9edeff;
+    }
+  }
+}
+
+
+
+/* *************************************** */
+/* footer */
+/* *************************************** */
+
+.footer {
+  .start {
+    padding: 3rem 0 0 0;
+  }
+
+  .row {
+    h3 {
+      padding-left: 20px;
+      color: var(--second-color);
+      font-family: var(--poppins-font-family);
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+      color: var(--first-color);
+    }
+
+    i {
+      color: var(--first-color);
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      padding: 0 20px;
+
+      .logo {
+        img {
+          width: 20%;
+        }
+      }
+    }
+
+    .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 20px;
+
+      .icon {
+        padding: 0.5rem 0;
+        transition: 0.5s;
+
+        &:hover {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .links {
+      padding-left: 20px;
+
+      li {
+        transition: 0.5s;
+
+        &:hover {
+          padding-left: 10px;
+        }
+      }
+
+      a {
+        color: var(--first-color);
+      }
+    }
+  }
+
+  .end-footer {
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+    margin-top: 20px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
